@@ -5,7 +5,6 @@
 var findGCD = function(nums) {
     let smallNum = Math.min(...nums)
     let bigNum = Math.max(...nums)
-    if(bigNum / smallNum % 1 == 0) return smallNum;
     for(let i = smallNum; i >= 1; i--){
         if(bigNum / i % 1 == 0 && smallNum / i % 1 == 0) return i;
     }
