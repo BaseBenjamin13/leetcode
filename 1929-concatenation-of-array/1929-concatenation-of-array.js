@@ -3,5 +3,9 @@
  * @return {number[]}
  */
 var getConcatenation = function(nums) {
-    return [...nums, ...nums]
+    let conNums = [...nums]
+    for (let i=0; i < nums.length; i++){
+        conNums[i + nums.length] = nums[i];
+    }
+    return conNums;
 }
