@@ -3,12 +3,11 @@
  * @return {number}
  */
 var smallestEvenMultiple = function(n) {
-    let num = n;
     while(true){
-        if(num % 2 == 0){
-            return num;
+        if(n % 2 == 0){
+            return n;
         }else{
-            num += num;
+            n += n;
         }
     }
 };
