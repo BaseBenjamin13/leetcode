@@ -10,6 +10,9 @@ var majorityElement = function(nums) {
         for(let j=0; j < nums.length; j++)
             if(nums[i] === nums[j]){
                 num++
+                if(num > nums.length / 2){
+                    return nums[i]
+                }
             }
         if(num > maxNum){
             maxNum = num;
