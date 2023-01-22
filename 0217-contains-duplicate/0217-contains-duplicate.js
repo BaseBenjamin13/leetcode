@@ -3,11 +3,10 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    let arr = nums
     function checkIfDuplicateExists(arr) {
         return new Set(arr).size !== arr.length
     }
-    if(checkIfDuplicateExists(arr)){
+    if(checkIfDuplicateExists(nums)){
         return true
     }
     else {
