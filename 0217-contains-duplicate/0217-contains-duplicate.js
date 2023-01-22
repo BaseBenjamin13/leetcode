@@ -4,21 +4,13 @@
  */
 var containsDuplicate = function(nums) {
     let arr = nums
-    // function checkIfDuplicateExists(arr) {
-    //     return new Set(arr).size !== arr.length
-    // }
-    // if(checkIfDuplicateExists(arr)){
-    //     return true
-    // }
-    // else {
-    //     return false
-    // }
-    for(let i = 0; i < nums.length; i++){
-        for(let j = i+1; j < nums.length; j++){
-            if(nums[i] === nums[j]){
-                return true;
-            }
-        }
+    function checkIfDuplicateExists(arr) {
+        return new Set(arr).size !== arr.length
     }
-    return false
+    if(checkIfDuplicateExists(arr)){
+        return true
+    }
+    else {
+        return false
+    }
 };
