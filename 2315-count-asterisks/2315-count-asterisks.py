@@ -6,7 +6,7 @@ class Solution:
         while i < len(s) :
             if s[i] == '|' :
                 pipe += 1
-            if s[i] == '*' and pipe % 2 == 0 :
+            elif s[i] == '*' and pipe % 2 == 0 :
                 asterisks += 1 
             i += 1
         return asterisks
