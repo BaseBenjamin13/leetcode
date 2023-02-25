@@ -8,8 +8,7 @@ var countAsterisks = function(s) {
     for(let i = 0; i < s.length; i++){
         if(s[i] === '|'){
             pipe++
-        }
-        if(s[i] === '*' && pipe % 2 === 0){
+        }else if(s[i] === '*' && pipe % 2 === 0){
             asterisks++
         }
     }
