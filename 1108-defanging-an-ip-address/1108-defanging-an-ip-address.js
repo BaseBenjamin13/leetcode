@@ -7,7 +7,7 @@ var defangIPaddr = function(address) {
     for(let i = 0; i < address.length; i++){
         if(address[i] == '.'){
             defanged += '[.]';
-        }else if(address[i] != '.'){
+        }else{
             defanged += address[i];
         }
     }
