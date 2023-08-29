@@ -4,5 +4,6 @@
  * @return {number}
  */
 var theMaximumAchievableX = function(num, t) {
-    return num + (2*t)
+    let x = (2*t)
+    return x + num
 };
